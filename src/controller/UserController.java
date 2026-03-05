@@ -62,6 +62,8 @@ public class UserController {
                     adminService.searchSong();
                     break;
 
+                case 5:
+                    return;
                 default:
                     break;
             }

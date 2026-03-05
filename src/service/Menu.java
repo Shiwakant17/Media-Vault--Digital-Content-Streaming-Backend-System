@@ -19,6 +19,8 @@ public class Menu {
                 System.out.println(
                                 "                                                                    ||        4. TRENDING SONGS       ||");
                 System.out.println(
+                                "                                                                    ||        5. BACK                 ||");
+                System.out.println(
                                 "                                                                    ||                                ||");
                 Thread.sleep(100);
                 System.out.println(
@@ -46,6 +48,32 @@ public class Menu {
                                 "                                                                    ||        4. TRENDING SONGS       ||");
                 System.out.println(
                                 "                                                                    ||        5. SHOW SONG            ||");
+                System.out.println(
+                                "                                                                    ||                                ||");
+                Thread.sleep(100);
+                System.out.println(
+                                "                                                                      ================================");
+
+        }
+
+        // logged in user
+        public void LoggedInUser() throws InterruptedException {
+                System.out.println();
+                System.out.println();
+
+                System.out.println(
+                                "                                                                      ================================");
+                Thread.sleep(100);
+                System.out.println(
+                                "                                                                    ||                                ||");
+                System.out.println(
+                                "                                                                    ||        1. PLAY SONGS           ||");
+                System.out.println(
+                                "                                                                    ||        2. SEARCH SONG          ||");
+                System.out.println(
+                                "                                                                    ||        3. TRENDING SONGS       ||");
+                System.out.println(
+                                "                                                                    ||        4. SHOW SONG            ||");
                 System.out.println(
                                 "                                                                    ||                                ||");
                 Thread.sleep(100);

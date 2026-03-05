@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class User {
@@ -8,6 +9,15 @@ public class User {
     long phone;
     String email;
     String password;
+    ArrayList<Integer> playedSongs = new ArrayList<>();
+
+    public ArrayList<Integer> getPlayedSongs() {
+        return playedSongs;
+    }
+
+    public void setPlayedSongs(ArrayList<Integer> playedSongs) {
+        this.playedSongs = playedSongs;
+    }
 
     public String getUserId() {
         return userId;

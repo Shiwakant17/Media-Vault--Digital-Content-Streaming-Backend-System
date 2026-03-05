@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import controller.LoggedInUserController;
 import data.UserList;
 import model.User;
 import repository.SongRepository;
@@ -63,7 +64,8 @@ public class UserService {
                 songRepository.getAllSongs();
         }
 
-        public void login() throws FileNotFoundException {
+        public void login() throws FileNotFoundException, InterruptedException {
+                LoggedInUserController loggedInUserController = new LoggedInUserController();
                 Scanner sc = new Scanner(System.in);
                 UserList userList = new UserList();
                 userList.loadUserList();
@@ -83,6 +85,7 @@ public class UserService {
                                 System.out.println();
                                 System.out.print(
                                                 "                                                                           LOGGED IN SUCCESSFULLY ");
+                                loggedInUserController.loggedInUser();
                                 return;
                         }
                         l++;
